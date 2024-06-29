@@ -1,0 +1,446 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-left: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-text {
+  margin-left: 70px;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.my-photo {
+  border-radius: 50%;
+}
+
+.header {
+  background-color: #066;
+  padding: 33px 0 33px;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  padding-left: 450px;
+  margin: 0 auto;
+  text-align: r;
+  display: flex;
+}
+
+.body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #0a0a0a;
+}
+
+.menu-link,
+.phone1,
+.phone2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.about {
+  font-family: 'inter';
+  margin-top: 70px;
+  font-size: 28px;
+  text-align: center;
+  color: #384347;
+}
+
+.about-1,
+.about-me-1 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.about-me,
+.projects,
+.hobbies {
+  font-family: 'inter';
+  margin-top: 70px;
+  font-size: 30px;
+  text-align: center;
+  color: #384347;
+}
+
+p {
+  font-family: 'inter';
+  font-size: 30px;
+  text-align: center;
+
+  color: #384347;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.link-site {
+  display: flex;
+  justify-content: center;
+  font-family: 'inter';
+
+  margin-top: 30px;
+  margin-bottom: 100px;
+  font-size: 28px;
+  color: #384347;
+}
+
+.links-text {
+  font-family: 'inter';
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  text-align: center;
+  color: #384347;
+}
+
+.contacts-text {
+  font-family: 'inter';
+  margin-top: 120px;
+  font-size: 28px;
+  text-align: center;
+  color: #384347;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+  width: 1200px;
+  height: 600px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-btn span {
+  height: 2px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.tabs {
+  margin-bottom: 70px;
+}
+
+.tabs-btn {
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 110px;
+  padding-bottom: 100px;
+}
+
+.tabs-btn-item {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.tabs-btn-item--active {
+  color: rgb(0, 135, 135);
+}
+
+.tabs-content-item {
+  display: none;
+}
+
+.tabs-content-item.tabs-content-item--active {
+  display: inline;
+}
+
+@import 'compass/css3';
+
+.ss-icon {
+  position: static;
+  justify-content: center;
+  margin: 30px auto;
+  width: 680px;
+  min-height: 90px;
+  font-size: 35px;
+  text-align: center;
+}
+.button-1 {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 160px;
+  height: 80px;
+  margin: 5px;
+}
+article {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #384347;
+  box-shadow: 0 0 6px -2px #000, 0 0 45px -20px #000;
+  color: #fff;
+  line-height: 90px;
+  transform: perspective(300px) rotateY(0deg);
+  transition: transform 0.4s linear, background-color 0s linear 0.2s,
+    color 0s linear 0.2s;
+  a:hover & {
+    transform: perspective(300px) rotateY(180deg);
+    color: #eee;
+    transition: transform 0.2s linear, background-color 0s linear 0.1s,
+      color 0s linear 0.1s;
+  }
+  a:nth-child(2):hover & {
+    background-color: #3b5998;
+  }
+  a:nth-child(3):hover & {
+    background-color: #cb2027;
+  }
+  a:nth-child(4):hover & {
+    background-color: #066;
+  }
+  a:nth-child(5):hover & {
+    background-color: #4183c4;
+  }
+  a:nth-child(6):hover & {
+    background-color: #1769ff;
+  }
+}
+span {
+  transition: transform 0s linear 0.2s, text-shadow 0s linear 0.2s;
+  display: block;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: antialiased;
+  a:hover & {
+    transition: transform 0s linear 0.1s, text-shadow 0s linear 0.1s;
+    transform: scale(-1, 1);
+    text-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@font-face {
+  font-family: 'SSSocial';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2361/ss-social-regular.eot');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2361/ss-social-regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2361/ss-social-regular.woff')
+      format('woff'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2361/ss-social-regular.ttf')
+      format('truetype'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2361/ss-social-regular.svg#SSSocialRegular')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+html:hover [class^='ss-'] {
+  -ms-zoom: 1;
+}
+
+.ss-icon,
+.ss-icon.ss-social,
+.ss-icon.ss-social-circle,
+[class^='ss-']:before,
+[class*=' ss-']:before,
+[class^='ss-'][class*=' ss-social']:before,
+[class*=' ss-'][class*=' ss-social']:before,
+[class^='ss-'].right:after,
+[class*=' ss-'].right:after,
+[class^='ss-'][class*=' ss-social'].right:after,
+[class*=' ss-'][class*=' ss-social'].right:after {
+  font-family: 'SSSocial';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -moz-font-feature-settings: 'liga=1';
+  -moz-font-feature-settings: 'liga';
+  -ms-font-feature-settings: 'liga' 1;
+  -o-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.ss-icon.ss-social-circle,
+[class^='ss-'].ss-social-circle:before,
+[class*=' ss-'].ss-social-circle:before,
+[class^='ss-'].ss-social-circle.right:after,
+[class*=' ss-'].ss-social-circle.right:after {
+  font-weight: bold;
+}
+
+[class^='ss-'].right:before,
+[class*=' ss-'].right:before {
+  display: none;
+  content: '';
+}
+
+@media (max-width: 1240px) {
+  .menu {
+    position: absolute;
+    z-index: 5;
+    background-color: #151515;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 40px;
+    padding-left: 0px;
+    height: 100vh;
+    width: 100vw;
+    transform: translateY(-100%);
+    justify-content: space-evenly;
+    transition: transform 0.3s;
+  }
+
+  .menu--active {
+    transform: translateY(0%);
+  }
+
+  .menu-btn {
+    display: flex;
+    position: relative;
+    z-index: 10;
+  }
+
+  .header-text {
+    margin-left: 0px;
+  }
+  .nav {
+    justify-content: space-between;
+  }
+
+  .header-text {
+    font-size: 25px;
+  }
+  p {
+    font-size: 25px;
+  }
+  .about,
+  .about-me,
+  .projects,
+  .hobbies,
+  .links-text,
+  .contacts-text,
+  .link-site {
+    font-size: 25px;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  :root {
+    --swiper-navigation-size: 30px;
+  }
+}
+
+@media (max-width: 720px) {
+  .ss-icon {
+    width: 340px;
+  }
+  .contacts-text {
+    margin-top: 200px;
+  }
+  .header-text {
+    font-size: 20px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .about,
+  .about-me,
+  .projects,
+  .hobbies,
+  .links-text,
+  .contacts-text,
+  .link-site {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .my-photo {
+    display: none;
+  }
+  :root {
+    --swiper-navigation-size: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .ss-icon {
+    width: 170px;
+  }
+  .contacts-text {
+    margin-top: 350px;
+  }
+  :root {
+    --swiper-navigation-size: 20px;
+  }
+}
